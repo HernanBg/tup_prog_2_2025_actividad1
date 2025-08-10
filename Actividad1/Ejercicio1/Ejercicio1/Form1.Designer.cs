@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            tbDescripcion = new TextBox();
+            btnDescribir = new Button();
+            SuspendLayout();
+            // 
+            // tbDescripcion
+            // 
+            tbDescripcion.Location = new Point(12, 12);
+            tbDescripcion.Multiline = true;
+            tbDescripcion.Name = "tbDescripcion";
+            tbDescripcion.Size = new Size(197, 172);
+            tbDescripcion.TabIndex = 0;
+            // 
+            // btnDescribir
+            // 
+            btnDescribir.Location = new Point(224, 80);
+            btnDescribir.Name = "btnDescribir";
+            btnDescribir.Size = new Size(75, 23);
+            btnDescribir.TabIndex = 1;
+            btnDescribir.Text = "Describir";
+            btnDescribir.UseVisualStyleBackColor = true;
+            btnDescribir.Click += btnDescribir_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnDescribir);
+            Controls.Add(tbDescripcion);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+        public Button btnDescribir;
+        public TextBox tbDescripcion;
     }
 }
